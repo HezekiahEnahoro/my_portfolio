@@ -1,32 +1,15 @@
-<<<<<<< HEAD
-# Logs
+# === Logs ===
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-=======
 # === React (frontend) ===
 frontend/node_modules/
 frontend/build/
+frontend/dist/
 frontend/.env
 
 # === Flask (backend) ===
@@ -37,11 +20,24 @@ backend/config.env
 backend/instance/
 backend/*.db
 
-# === OS / Editor junk ===
-.DS_Store
+# === General ignores ===
+node_modules
+dist
+dist-ssr
+*.local
+
+# === Editor/IDE junk ===
 .vscode/
-.idea/
-*.log
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# === Environment Files ===
 .env
 .env.*
->>>>>>> 8b173adc1bdf09d47051754ece3983becaf32365
