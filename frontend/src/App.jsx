@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 import { motion } from "framer-motion";
 import Layout from "./layout/Layout";
 import profilePic from "./assets/portfolio-image.jpeg";
-
+const API = import.meta.env.SERVER_API || "http://localhost:5000";
 export default function App() {
   const [profile, setProfile] = useState(null);
   const [projects, setProjects] = useState([]);
@@ -19,7 +19,7 @@ export default function App() {
   const [sending, setSending] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/profile") // we'll build this later in Flask
+    fetch(`${API}/api/profile`) // we'll build this later in Flask
       .then((res) => res.json())
       .then((data) => setProfile(data))
       .catch(() => {
