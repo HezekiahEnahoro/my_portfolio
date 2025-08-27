@@ -6,7 +6,8 @@ import Contact from "./pages/Contact";
 import { motion } from "framer-motion";
 import Layout from "./layout/Layout";
 import profilePic from "./assets/portfolio-image.jpeg";
-const API = import.meta.env.SERVER_API || "http://localhost:5000";
+const API =
+  import.meta.env.SERVER_API || "https://my-portfolio-pi9o.onrender.com";
 export default function App() {
   const [profile, setProfile] = useState(null);
   const [projects, setProjects] = useState([]);
