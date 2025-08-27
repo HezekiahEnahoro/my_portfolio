@@ -13,7 +13,7 @@ export default function Contact({formData, handleFormSubmit, handleInputChange, 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}>
-        <h2 className="text-center mb-6 text-3xl font-bold mb-6 text-indigo-700">
+        <h2 className="text-center text-3xl font-bold mb-6 text-indigo-700">
           Contact Me
         </h2>
         <form
